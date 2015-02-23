@@ -9,18 +9,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Edit team page</title>
+<title>Edit order page</title>
 </head>
 <body>
-<h1>Edit team page</h1>
-<p>Here you can edit the existing team.</p>
+<h1>Edit order page</h1>
+<p>Here you can edit the existing orders. (testing)</p>
 <p>${message}</p>
 <form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/team/edit/${team.id}.html">
 <table>
 <tbody>
 	<tr>
 		<td>Name:</td>
-		<td><form:input path="name" /></td>
+		<td><form:textarea path="name" /></td>
 	</tr>
 	<tr>
 		<td>Rating:</td>

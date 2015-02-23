@@ -5,14 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Home page</title>
+<title>Acs Order Servlet Admin Page</title>
 </head>
 <body>
-<h1>Home page</h1>
+<h1>Acs Order Servlet Admin Page</h1>
 <p>
 ${message}<br/>
-<a href="${pageContext.request.contextPath}/team/add.html">Add new team</a><br/>
-<a href="${pageContext.request.contextPath}/team/list.html">Team list</a><br/>
+    <a href="${pageContext.request.contextPath}/team/add.html">Add New team</a><br/>
+    <a href="${pageContext.request.contextPath}/team/list.html">Acs team List</a><br/>
+    <a href="${pageContext.request.contextPath}/order/add.html">Add New Order</a><br/>
+    <a href="${pageContext.request.contextPath}/order/list.html">Acs Order List</a><br/>
 </p>
 </body>
 </html>

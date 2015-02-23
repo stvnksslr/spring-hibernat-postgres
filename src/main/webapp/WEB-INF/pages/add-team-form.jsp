@@ -12,14 +12,13 @@
 <title>Add team page</title>
 </head>
 <body>
-<h1>Add team page</h1>
-<p>Here you can add a new team.</p>
+<h1>Manually input order here (testing)</h1>
 <form:form method="POST" commandName="team" action="${pageContext.request.contextPath}/team/add.html">
 <table>
 <tbody>
 	<tr>
 		<td>Name:</td>
-		<td><form:input path="name" /></td>
+		<td><form:textarea path="name" /></td>
 	</tr>
 	<tr>
 		<td>Rating:</td>
