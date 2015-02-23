@@ -27,7 +27,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach var="AcsOrders" items="${acsOrder}">
+    <c:forEach var="acsorder" items="${acsOrders}">
         <tr>
             <td>${acsOrder.id}</td>
             <td>${acsOrder.orderdata}</td>
