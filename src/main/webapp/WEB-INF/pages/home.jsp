@@ -11,6 +11,8 @@
 <h1>Acs Order Servlet Admin Page</h1>
 <p>
 ${message}<br/>
+    <a href="${pageContext.request.contextPath}/team/list.html">Acs team List</a><br/>
+    <br />
     <a href="${pageContext.request.contextPath}/order/add.html">Add New Order</a><br/>
     <a href="${pageContext.request.contextPath}/order/list.html">Acs Order List</a><br/>
 </p>

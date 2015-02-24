@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: skessler
-  Date: 2/23/15
-  Time: 11:32 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -23,16 +16,18 @@
 <table border="1px" cellpadding="0" cellspacing="0" >
     <thead>
     <tr>
-        <th width="10%">id</th><th width="15%">order</th><th width="15%">processed</th><th width="10%">date processed</th><th width="10%">actions</th>
+        <th width="10%">id</th><th width="15%">name</th><th width="10%">rating</th><th width="10%">actions</th>
     </tr>
     </thead>
     <tbody>
-    <c:forEach var="acsorder" items="${acsOrders}">
+    <c:forEach var="team" items="${teams}">
         <tr>
-            <td>${acsorder.id}</td>
+            <td>${team.id}</td>
+            <td>${team.name}</td>
+            <td>${team.rating}</td>
             <td>
-                <a href="${pageContext.request.contextPath}/order/edit/${acsorder.id}.html">Edit</a><br/>
-                <a href="${pageContext.request.contextPath}/order/delete/${acsorder.id}.html">Delete</a><br/>
+                <a href="${pageContext.request.contextPath}/team/edit/${team.id}.html">Edit</a><br/>
+                <a href="${pageContext.request.contextPath}/team/delete/${team.id}.html">Delete</a><br/>
             </td>
         </tr>
     </c:forEach>

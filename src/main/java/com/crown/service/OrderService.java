@@ -12,7 +12,7 @@ public interface OrderService {
     public void updateAcsOrder(AcsOrder acsOrder);
     public AcsOrder getAcsOrder(int id);
     public void deleteAcsOrder(int id);
-    public List<AcsOrder> getAcsorders();
+    public List<AcsOrder> getAcsOrders();
 }
 
 

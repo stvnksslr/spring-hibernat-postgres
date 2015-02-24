@@ -43,7 +43,7 @@ public class AcsController {
     @RequestMapping(value="/list")
     public ModelAndView listOfOrders() {
         ModelAndView modelAndView = new ModelAndView("list-of-orders");
-        List<AcsOrder> acsOrders = orderService.getAcsorders();
+        List<AcsOrder> acsOrders = orderService.getAcsOrders();
         modelAndView.addObject("acsorders", acsOrders);
         return modelAndView;
     }
